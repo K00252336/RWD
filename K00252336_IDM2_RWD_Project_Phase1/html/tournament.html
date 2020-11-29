@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota News - K00252336</title>
+
+	<meta charset="utf-8"/>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/esports.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<div class="article">
+			<h2>Prize pool - $40,000,000</h2>
+
+			<img src="../images/ti10.jpg" id="ti10">
+
+			<div class="content">
+				<p>After 137 days, the TI10 Battle Pass generated an enormous sum of cash, boosting the postponed event’s prize pool to $40,004,772. This shatters the previous record set by The International 2019, which had a prize pool of $34,330,068.</p>
+
+				<p>That prize pool comes despite constant controversy around the battle pass among Dota 2 fans. Though the battle pass season is typically a highlight of the year in Dota 2, this year saw a steady stream of negativity in regards to the battle pass features as well as the overall state of the game.</p>
+
+				<p>Early on, many railed against the new mini-game Sideshop and the changes to the Immortal Treasure recycling system. From there, fans blasted some of the exclusive skins offered by the TI10 Battle Pass, particularly the hero personas for Pudge and Anti-Mage. As the battle pass began to wind down, Valve repeatedly delayed the launch of the Immortal Treasure 3 and ultimately cancelled the 2020 Trove Carafe.</p>
+
+				<p>Despite that, Valve has better refined its methods for wringing money out of players’ wallets. </p>
+
+				<p>After the popularity of the TI9 Battle Pass and its focus on high quality and exclusive skins, the TI10 Battle Pass doubled down with three arcanas and two hero personas. Alongside this was an expansion to the annual Battle Level Bundle deal, letting players buy two bundles instead of the typical one. As with 2019, two Collector’s Cache treasures were released instead of one. Last but not least, Valve offered discounted level bundles in the final days of the TI10 Battle Pass to incentivize more spending from those who were close to locking up rewards.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

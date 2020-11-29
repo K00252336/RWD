@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Dota News - K00252336</title>
+	
+	<meta charset="utf-8"/>	
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/news.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+	
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<h1 id="title">	Latest News</h1>
+
+		<div class="articles">
+			<div class="eg">
+				<h2><a href="esports.html">Evil Geniuses signs iceiceice to complete Dota 2 roster</h2>
+
+					<img src="../images/ice3x.jpg" id="ice3x"></a>
+
+				<div class="content1">
+					<p>North American organization Evil Geniuses completed its Dota 2 roster today with a surprise addition of one of the game’s most experienced offlaners.
+
+					Following RAMZES666’s removal from the team’s active roster, EG has gone in the opposite direction for his replacement, signing Daryl Koh “iceiceice” Pei Xiang to the lineup.</p>
+				</div>
+			</div>
+
+
+			<div class="diretide">
+				<h2><a href="gameupdate.html">Here’s How You Play Dota 2’s New Game Mode - Diretide</h2>
+
+					<img src="../images/tdiretide.png" id="tdiretide"></a>
+
+				<div class="content2">
+					<p>2020 truly is a weird year. Diretide is back! And this time we didn't even have to spam Volvo's page. The Dota 2 community has clamored to bring back Diretide during the Halloween season for many years. It always fell on deaf ears.</p>
+				</div>
+			</div>
+
+
+			<div class="ti10">
+				<h2><a href="tournament.html">Prize pool - $40,000,000</h2>
+
+					<img src="../images/ti10.jpg" id="ti10"></a>
+
+				<div class="content3">
+					<p>After 137 days, the TI10 Battle Pass generated an enormous sum of cash, boosting the postponed event’s prize pool to $40,004,772. This shatters the previous record set by The International 2019, which had a prize pool of $34,330,068.</p>
+				</div>
+			</div>
+
+
+			<div class="update">
+				<h2><a href="upd.html">Update -7.27d</h2>
+
+					<img src="../images/7d.jpg" id="updateimg"></a>
+
+				<div class="content4">
+					<p>Drum of Endurance
+					    All stats reduced from +6 to +4
+
+					Heaven's Halberd
+					    Now has a 400 gold recipe cost
+
+					Soul Ring
+					    Recipe cost reduced from 350 to 275
+
+					Helm of the Dominator
+						Minimum health reduced from 1500 to 1000
+					    Now grants +4 Armor to the dominated creep</p>
+				</div>
+			</div>
+
+
+			<div class="vici">
+				<h2><a href="vg.html">Vici Gaming officially transfers Eurus to Elephant</h2>
+
+					<img src="../images/eurus.jpg" id="eurus"></a>
+
+				<div class="content5">
+					<p>Vici Gaming officially transfers Eurus to Elephant
+						The transfer dispute burnt a lot of bridges, however,
+						after more than a month of controversy, Eurus has finally officialized his transfer to China’s newest Dota 2 super team now known as Elephant following a dissolution of the partnership between Four Angry Men and Elephant Entertainment Company.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button id="btnadd">Add Article</button>
+			<button id="btnremove">Remove Article</button>
+		</div>
+
+		<div class="ads">
+			<p id="adstitle">Advertisements -</p>
+			<ul class="adslist">
+				<li><a href="steam.com">Steam</a></li>
+				<li><a href="masteranime.es">MasterAnime</a></li>
+			</ul>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

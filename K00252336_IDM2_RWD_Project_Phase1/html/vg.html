@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota News - K00252336</title>
+
+	<meta charset="utf-8"/>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/esports.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<div class="article">
+			<h2>Vici Gaming officially transfers Eurus to Elephant</h2>
+
+			<img src="../images/eurus.jpg" id="eurus">
+
+			<div class="content">
+				<p>Vici Gaming officially transfers Eurus to Elephant
+				The transfer dispute burnt a lot of bridges, however, after more than a month of controversy, Eurus has finally officialized his transfer to China’s newest Dota 2 super team now known as Elephant following a dissolution of the partnership between Four Angry Men and Elephant Entertainment Company.</p>
+
+				<p>Vici Gaming announced the official transfer yesterday, putting the final stamp on an astoundingly messy saga for all parties.</p>
+
+				<p>“Following sufficient communication between VG, Eurus, and Elephant, the club confirms that the transfer fee for Eurus was received. All three parties have come to a consensus: Former VG Dota 2 player Eurus officially transfers to Elephant Dota 2,” VG wrote, as translated by Dot Esports.</p>
+
+				<p>The Singaporean offlaner’s most recent stint with Fnatic ended after two years, with him citing a desire to play “for another region.” The veteran played for a long list of some of China’s and Southeast Asia’s best teams, but this will be his first tenure on a North American team.</p>
+
+				<p>The final two paragraphs were appreciative statements about Eurus’ three-year tenure with VG and wishing him well in the next stage of his career.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

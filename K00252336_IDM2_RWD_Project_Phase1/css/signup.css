@@ -1,0 +1,125 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #2B292C;
+    display: grid;
+    padding: 5% 20%;/*creates spaces - side of page*/
+}
+
+/*Main*/
+main img
+{   
+    display: block; /*centers image*/
+    margin: auto; /*centers image*/
+    max-width: 250px;
+    min-width: 200px;
+    height: 200px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+main h1
+{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+main h2
+{
+    margin: 0;
+    padding: 10px 10px;
+}
+
+fieldset
+{
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+legend
+{
+    color: white;
+}
+
+label
+{
+    display: inline-block;
+    padding: 2% 0;  
+    text-align: left;
+    color: white;
+}
+
+input
+{
+    border-radius: 5px;
+    padding: 0 0 0 5%; /*Fixes text inside box*/
+    margin: 2.5% 0;
+}
+
+.content
+{
+    display: grid;
+    max-width: 500px; 
+    width: 50%;
+    padding: 10% 25%;
+    justify-content: center;
+}
+
+.content p
+{
+    margin: auto;
+    padding: 2.5% 0; /*Box spaces*/
+}
+
+button 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 0;
+    text-decoration: none;
+    background-color: white;
+    float: right;
+    border-radius: 5px;    
+}
+
+button a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#btnreset
+{
+    padding: 0 3.5%;
+}
+
+#btnreset:hover 
+{
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+
+#btnsubmit:hover 
+{
+  background-color: green;
+  color: white;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 720px) 
+{
+    body
+    {
+        font-size: small;
+    }
+}

@@ -1,0 +1,146 @@
+body
+{
+	display: grid;
+	margin: 0;
+	padding: 0;
+	background-color: #4d4d4d;
+}
+
+/*Nav Bar*/
+nav
+{
+	position: fixed;
+	width: 100%;
+    top: 0;
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+nav ul
+{
+	border: 1px solid black;
+	background-color: #2B292C;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul li
+{
+	display: block;
+    font-size: 1em;
+    color: white;
+    padding: 0 2%;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.navbar ul li:hover > ul 
+{
+    background-color: white;
+}
+
+.logo
+{
+	margin-right: auto; 
+}
+
+input
+{
+    border-radius: 5px;
+    padding: 0 0 0 5%; /*Fixes text inside box*/
+    margin: 2.5% 0;
+}
+	
+header img
+{
+	max-width: 50px;
+	min-width: 20px;
+}
+
+/*Main*/
+main h2
+{
+	display: grid;
+	text-align: center;
+	color: white;
+}
+
+main img
+{
+	display: block; /*centers image*/
+	margin: auto; /*centers image*/
+	max-width: 1920px;
+	width: 95%;
+	max-height: 500px;
+	height: 40%;
+}
+
+.content p
+{
+	text-align: center;
+}
+
+.article
+{
+	padding: 10% 5% 2.5% 5%;
+}
+
+/*main
+{
+	max-height: 750px;
+	height: 100%;
+}*/
+
+footer
+{
+	display: grid;
+	background-color: #2B292C;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;	
+	width: 100%;
+	padding: 1% 0;
+	margin: 0;
+}
+
+/*Slick Nav*/
+#mobnav
+{
+    display: none; /*only visible when media query size is not met*/
+}
+
+/*media queries */
+@media only screen and (max-width: 800px) 
+{
+    #navbar
+    {
+        display: none;
+    }
+
+    #mobnav
+    { 
+        display: block;
+    }
+
+	.search
+    {
+    	display: none;
+    }
+
+    .logo
+    {
+    	display: none;
+    }
+
+    #clock
+    {
+    	display: none;
+    }
+}

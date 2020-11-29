@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota News - K00252336</title>
+
+	<meta charset="utf-8"/>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/esports.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<div class="article">
+			<h2>Evil Geniuses signs iceiceice to complete Dota 2 roster</h2>
+
+			<img src="../images/ice3x.jpg" id="ice3x">
+
+			<div class="content">
+				<p>North American organization Evil Geniuses completed its Dota 2 roster today with a surprise addition of one of the game’s most experienced offlaners.</p>
+
+				<p>Following RAMZES666’s removal from the team’s active roster, EG has gone in the opposite direction for his replacement, signing Daryl Koh “iceiceice” Pei Xiang to the lineup.</p>
+
+				<p>Iceiceice’s pro career stretches even further back than the beginning of Dota 2, having played competitively since 2005. The player will bring 15 years of experience and his premier space-creating skills to EG’s new roster, which should be a good fit with former Fnatic teammate Abed and hard carry Arteezy.</p>
+
+				<p>The Singaporean offlaner’s most recent stint with Fnatic ended after two years, with him citing a desire to play “for another region.” The veteran played for a long list of some of China’s and Southeast Asia’s best teams, but this will be his first tenure on a North American team.</p>
+
+				<p>EG are not scheduled for any upcoming tournaments, so it might take a while for fans to be able to watch the new roster in action.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

@@ -1,0 +1,261 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	display: grid;
+
+	background-color: #666666;	
+}
+
+/*Nav Bar*/
+nav
+{
+	position: fixed;
+	width: 100%;
+    top: 0;
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+nav ul
+{
+	border: 1px solid black;
+	background-color: #2B292C;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul li
+{
+	display: block;
+    font-size: 1em;
+    color: white;
+    padding: 0 2%;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#navbar ul li a:hover
+{
+    color: red;
+}
+
+.logo
+{
+	margin-right: auto; 
+}
+
+input
+{
+    border-radius: 5px;
+    padding: 0 0 0 5%; /*Fixes text inside box*/
+    margin: 2.5% 0;
+}
+
+nav img
+{
+	max-width: 50px;
+	min-width: 20px;
+}
+
+/*Main*/
+main img
+{
+	display: block; /*centers image*/
+	margin: auto; /*centers image*/
+	max-width: 1920px;
+	width: 100%;
+	max-height: 500px;
+	height: 250px;
+}
+
+
+
+main h2
+{
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+main h3
+{
+	padding: 5%;
+}
+
+#title
+{
+	text-align: center;
+	color: black;
+	margin: 0;
+	padding-top: 10%;
+}
+
+#news
+{
+	text-align: center;
+}
+
+/*Articles*/
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.articles a:hover
+{
+	color: red;
+}
+
+.articles p
+{
+	margin: auto;
+	padding-top: 2.5%;
+}
+
+.articles img
+{
+	width: 60%;
+	height: 300px;
+}
+
+.eg
+{
+	border: solid 2px white;
+	margin: 5%;
+	padding: 2.5%;
+}
+
+.diretide
+{
+	border: solid 2px white;
+	margin: 5%;
+	padding: 2.5%;
+}
+
+.ti10
+{
+	border: solid 2px white;
+	margin: 5%;
+	padding: 2.5%;
+}
+
+.update
+{
+	border: solid 2px white;
+	margin: 5%;
+	padding: 2.5%;
+}
+
+.vici
+{
+	border: solid 2px white;
+	margin: 5% 5% 2% 5%;
+	padding: 2.5%;
+}
+
+button 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.buttons
+{
+	text-align: center;
+	padding: 2%;
+}
+
+#btnadd:hover 
+{
+  background-color: green;
+  color: white;
+  transition: 0.5s;
+}
+
+#btnremove:hover 
+{
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+
+.ads
+{
+	text-align: center;
+	margin: 0;
+	padding: 1% 1% 2% 1%;
+}
+
+.adstitle
+{
+	padding-bottom: .05%;
+}
+
+.ads li
+{
+	list-style: none;
+}
+
+footer
+{
+	display: grid;
+	background-color: #2B292C;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;	
+	width: 100%;
+	padding: 1% 0;	
+	margin: 0;
+}
+
+/*Slick Nav*/
+#mobnav
+{
+    display: none; /*only visible when media query size is not met*/
+}
+
+/*media queries */
+@media only screen and (max-width: 800px) 
+{
+    #navbar
+    {
+        display: none;
+    }
+
+    #mobnav
+    { 
+        display: block;
+    }
+
+	.search
+    {
+    	display: none;
+    }
+
+    .logo
+    {
+    	display: none;
+    }
+
+    #clock
+    {
+    	display: none;
+    }
+}

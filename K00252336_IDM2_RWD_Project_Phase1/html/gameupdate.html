@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota News - K00252336</title>
+
+	<meta charset="utf-8"/>		
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/esports.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<div class="article">
+			<h2>Here’s How You Play Dota 2’s New Game Mode: Diretide</h2>
+
+			<img src="../images/tdiretide.png" id="tdiretide">
+
+			<div class="content">
+				<p>2020 truly is a weird year. Diretide is back! And this time we didn't even have to spam Volvo's page. The Dota 2 community has clamored to bring back Diretide during the Halloween season for many years. It always fell on deaf ears. However, finally, when everyone had just given up on it, Valve has brought back the beloved custom game.</p>
+
+				<p>Many are wondering, what is ‘Diretide’ and how do you even play this weird game mode? While Valve have a handy guide, it really doesn’t feel comprehensive enough. Don’t worry, we got your back. Here’s a quick tutorial on how to play Diretide optimally.</p>
+
+				<p>Diretide is a five-round custom game mode that is easy to play, but hard to master. The objective of the game is to collect Greevil Taffy(candy) and store it. In the middle, Roshan will begin hunting you or your teammates. You will have to pacify Roshan by feeding him the Greevil Taffy you collected. The game will be won by the team that collects the most Greevil Taffy.</p>
+
+				<p>The first thing that you will notice after you pick your heroes and load into the game is the beautiful Borderlands aesthetic that the Diretide map possesses. The map has two lanes: Top lane and Bottom lane where you battle against enemy heroes and creeps to collect Greevil Taffy.</p>
+
+				<p>There are also scarecrows at the top and the bottom of the map. Killing a scarecrow gives you either taffys or neutral items. Scarecrows spawn at fixed intervals. A notification stating “Scarecrow stashes are refreshed” will be displayed when they spawn.</p>
+
+				<p>There are a total of five rounds with each round lasting for 6 minutes each. The team with the higher taffy count at the end of each round wins it. The first team to win three rounds wins the game.</p>
+
+				<p>An invulnerable Roshan also roams the map, ravenous and bloodthirsty he will appear behind heroes. Unless you give him a Greevil Taffy, he will kill your team and curse you which will put a debuff on the entire team. So make sure to always have candy on yourself to feed Roshan.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

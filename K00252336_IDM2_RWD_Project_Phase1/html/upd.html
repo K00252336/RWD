@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dota News - K00252336</title>
+
+	<meta charset="utf-8"/>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../css/esports.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../images/favicon.ico"/>
+
+	<!-- JQuery -->
+	<link rel="stylesheet" href="../css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="../documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+</head>
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+				<li class="logo"><a href="../index.html"><img src="../images/logo.png" type="logo"></a></li>
+				<li id="clock" class="clock" onload="showTime()"></li>
+				<li id="news"><a href="news.html">News</a></li>
+				<li id="contact">Contact</li>
+				<li id="profile"><a href="profile.html">Profile</a></li>
+				<li id="log-in"><a href="login.html">Log-In</a></li>
+				<li id="sign-up"><a href="signup.html">Sign-Up</a></li>
+			    <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<div class="article">
+			<h2>Update -7.28</h2>
+
+			<img src="../images/7d.jpg" id="updateimg"></a>
+
+			<div class="content">
+				<p>DOTA 2 Patch 7.27d: New female hero will arrive in mid-December along with patch 7.27d. A new Dota 2 begins on December 1, 2020, and later in December, we will receive the patch we’ve been waiting for. Read more to find out all the features which will be a part of this update.</p>
+
+				<p>Every year around this time, Valve comes out with a complete overhaul, disrupting the existing meta. This year, players will have to wait around just a little longer for these changes to come into the system.</p>
+
+				<p>However, earlier today, Valve put out a statement which said that the new patch will arrive along with a brand-new female hero sometime in mid-December.</p>
+
+				<p>The key aspect of this update is that it will improve on the existing cheater identification system. With these changes, players will now be able to review matches in which they feel smurfing was existing. This will also help eliminate toxicity in-game, especially in lower brackets.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>

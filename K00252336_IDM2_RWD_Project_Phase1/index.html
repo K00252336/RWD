@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	
+	<!-- JQuery -->
+	<link rel="stylesheet" href="css/slicknav.css">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="documents/js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function()
+    	{
+			$('#navbar').slicknav({prependTo:"#mobnav"});
+    	});
+    </script>
+
+	<title>Dota News - K00252336</title>
+</head>
+
+
+
+<body>
+	<header>
+		<!-- Slick Nav Navigation Bar -->
+		<nav id="mobnav"></nav>
+
+		<!-- Navigation Bar -->
+		<nav id="navbar">		
+			<ul>
+					<li class="logo"><img src="images/logo.png" type="logo"></li>
+					<li id="clock" class="clock" onload="showTime()"></li>
+					<li id="news"><a href="html/news.html">News</a></li>
+					<li id="contact">Contact</li>
+					<li id="profile"><a href="html/profile.html">Profile</a></li>
+					<li id="log-in"><a href="html/login.html">Log-In</a></li>
+					<li id="sign-up"><a href="html/signup.html">Sign-Up</a></li>
+			        <li><input type="text" placeholder="Search" class="search"></li>
+		    </ul>
+		</nav>
+	</header>
+
+	<!--- Clock --->
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+		    let clock = document.querySelector("#clock"); // Get element with id="clock"
+		    let now = new Date();                         // Get current time
+		    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+		}
+		displayTime()                    // Display the time right away
+		setInterval(displayTime, 1000);  // And then update it every second. 
+	</script>
+
+	<main>
+		<!-- Image -->
+		<img src="images/diretide.png" class="tideimg">
+
+		<h1 id="title">Dota News</h1>
+		<hr>
+
+		<!-- Articles -->
+		<h2 id="news">Hot Articles!</h2>
+
+	<section class="articles">
+		<div class="esports">
+			<h3><a href="html/esports.html">eSports</h3>
+
+				<img src="images/ice3x.jpg" id="ice3x"></a>
+
+				<p>North American organization Evil Geniuses completed its Dota 2 roster today with a surprise addition of one of the game’s most experienced offlaners.
+
+				Following RAMZES666’s removal from the team’s active roster, EG has gone in the opposite direction for his replacement, signing Daryl Koh “iceiceice” Pei Xiang to the lineup.</p>
+		</div>
+
+		<div class="updates">
+			<h3><a href="html/gameupdate.html">Game Updates</h3>
+
+				<img src="images/tdiretide.png" id="tdiretide"></a>
+
+				<p>Diretide 2020 was a Halloween event that ran from October 29, 2020 to December 22, 2020. It featured a special game mode where two teams must collect the most taffy while avoiding the wrath of Roshan. Players could earn many unique event cosmetics by playing matches and earning Diretide Points.</p>
+		</div>
+
+		<div class="history">
+			<h3><a href="html/tournament.html">History</h3>
+
+				<img src="images/ti10.jpg" id="ti10"></a>
+
+				<p>After 137 days, the TI10 Battle Pass generated an enormous sum of cash, boosting the postponed event’s prize pool to $40,004,772. This shatters the previous record set by The International 2019, which had a prize pool of $34,330,068.</p>
+		</div>
+	</div>
+
+	</main>
+
+	<footer>
+		&copy; 2020 Dota News!
+	</footer>
+</body>
+</html>
